@@ -50,3 +50,33 @@ Count of Restaurant ID by Restaurant Name → Bar chart to show how frequently a
 
 🔄 Country Dropdown Filter (Top Right Corner)
 Enables the user to filter entire report based on selected country.
+
+## Installation / Usage
+•Install Power BI Desktop from the [Official Power BI Download Site](https://www.microsoft.com/en-us/download/details.aspx?id=58494).
+
+•Download data files from link given in Introduction
+
+•Download this repository to your local machine
+
+•Open Dashboard report file (Road Accidents Dashboard.pbix) in Power BI Desktop, to access the dashboard's interactivity
+
+## DAX Formulas Used in Measures
+1.Total Restaurants
+  •Total Restaurants = DISTINCTCOUNT('zomato'[Restaurant Name])
+
+2.Total Aggregate Rating
+  •Total Aggregate Rating = SUMX('zomato', VALUE('zomato'[Aggregate Rating]))
+  
+3.Total Countries 
+  •Total Countries = DISTINCTCOUNT('zomato'[Country Code])
+
+## Bug / Feature Request   
+- If you encounter any bugs (e.g., the dashboard produces undesired results), please open an issue [here](https://github.com/Mothilragav05/Road-Accident-Dashboard-PowerBI/issues/new) and include:
+  - Your search query
+  - The expected result
+
+- If you'd like to request a new feature, feel free to open an issue [here](https://github.com/Mothilragav05/Road-Accident-Dashboard-PowerBI/issues/new). Please include:
+  - Sample queries
+  - The corresponding expected results
+## Authors
+[Mothilragav](https://github.com/Mothilragav05)
